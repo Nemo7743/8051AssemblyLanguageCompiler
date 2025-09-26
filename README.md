@@ -12,7 +12,8 @@ Instruction Parsing: Utilizes the Python re module for efficient lexical analysi
 
 Opcode Translation: Implements a high-speed lookup table (array of regex patterns and lambda actions) to perform rapid, one-to-one translation from assembly lines to hexadecimal machine code.
 
-# Targeted Instructions: Supports a foundational set of 8051 instructions, including key Data Transfer, Arithmetic, and Branching operations.
+# Targeted Instructions:
+Supports a foundational set of 8051 instructions, including key Data Transfer, Arithmetic, and Branching operations.
 
 # How to Run the Compiler
 Prerequisites
