@@ -26,7 +26,7 @@ Run the compiler script:
 
 The resulting machine code (in sequential hexadecimal bytes) will be written to test02-out.txt.
 
-Example Input (test02.txt)
+Example Input (test01.txt)
 ```asm
 MOV @R0, #7BH
 MOV @R1, 6CH
@@ -40,7 +40,7 @@ ANL 38H, #77H
 XRL 34H, A
 
 ```
-Expected Output (test02-out.txt)
+Expected Output (test01-out.txt)
 ```76 7B A7 6C 95 44 B4 01 F4 7C A2 24 93 D5 40 12 8D 48 53 38 77 62 34 ```
 
 # Key Takeaway for Performance
