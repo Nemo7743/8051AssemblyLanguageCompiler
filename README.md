@@ -28,12 +28,20 @@ The resulting machine code (in sequential hexadecimal bytes) will be written to 
 
 Example Input (test02.txt)
 ```asm
-MOV R0, #25H
-ADD A, #0AH
-DJNZ 30H, 01H
+MOV @R0, #7BH
+MOV @R1, 6CH
+SUBB A, 44H
+CJNE A, #01H, 0F4H
+MOV R4, #0A2H
+ADD A, #93H
+DJNZ 40H, 12H
+MOV 48H, R5
+ANL 38H, #77H
+XRL 34H, A
+
 ```
 Expected Output (test02-out.txt)
-```78 25 24 0A D5 30 01```
+```76 7B A7 6C 95 44 B4 01 F4 7C A2 24 93 D5 40 12 8D 48 53 38 77 62 34 ```
 
 # Key Takeaway for Performance
 Working on this compiler demonstrated the direct relationship between assembly code structure and the resulting memory footprint. This experience informs my approach to writing performance-aware C++ code by considering:
