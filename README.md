@@ -22,7 +22,7 @@ Place the 8051 assembly code (one instruction per line) into the input file name
 
 Run the compiler script:
 
-python compiler.py
+```python compiler.py```
 
 The resulting machine code (in sequential hexadecimal bytes) will be written to test02-out.txt.
 
@@ -33,7 +33,7 @@ ADD A, #0AH
 DJNZ 30H, 01H
 ```
 Expected Output (test02-out.txt)
-78 25 24 0A D5 30 01
+```78 25 24 0A D5 30 01```
 
 # Key Takeaway for Performance
 Working on this compiler demonstrated the direct relationship between assembly code structure and the resulting memory footprint. This experience informs my approach to writing performance-aware C++ code by considering:
