@@ -39,8 +39,11 @@ DJNZ 30H, 01H
 # Key Takeaway for Performance
 Working on this compiler demonstrated the direct relationship between assembly code structure and the resulting memory footprint. This experience informs my approach to writing performance-aware C++ code by considering:
 
-# Instruction Efficiency: Understanding the difference between one-byte and two-byte instructions.
+# Instruction Efficiency:
+Understanding the difference between one-byte and two-byte instructions.
 
-# Memory Layout: How compiler choices affect memory access patterns, which is critical for maximizing CPU Cache utilization in game engine development.
+# Memory Layout:
+How compiler choices affect memory access patterns, which is critical for maximizing CPU Cache utilization in game engine development.
 
-# Documentation: For a detailed breakdown of the design decisions and technical analysis, please refer to the Full Technical Report (PDF) located in the Documentation folder.
+# Documentation:
+For a detailed breakdown of the design decisions and technical analysis, please refer to the Full Technical Report (PDF) located in the Documentation folder.
