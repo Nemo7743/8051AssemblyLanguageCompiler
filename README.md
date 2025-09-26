@@ -27,10 +27,11 @@ python compiler.py
 The resulting machine code (in sequential hexadecimal bytes) will be written to test02-out.txt.
 
 Example Input (test02.txt)
-'''MOV R0, #25H
+```asm
+MOV R0, #25H
 ADD A, #0AH
-DJNZ 30H, 01H'''
-
+DJNZ 30H, 01H
+```
 Expected Output (test02-out.txt)
 78 25 24 0A D5 30 01
 
