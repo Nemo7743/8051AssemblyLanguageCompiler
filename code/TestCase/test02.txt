@@ -1,0 +1,15 @@
+ANL 0F0H, #2DH
+
+ ADD    A, #0A3H
+     DJNZ 58H, 0AH
+ MOV @R0,     99H
+    MOV   0B0H,R2
+ CJNE A, #4DH  , 4FH
+ MOV R7,  #9AH
+
+
+    SUBB A, 0E1H
+MOV    83H, R0
+  DJNZ   0A0H, 0D2H   
+ XRL 90H,    A
+ MOV     @R1, #0BH
