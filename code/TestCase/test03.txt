@@ -1,0 +1,13 @@
+
+DJNZ 0B0H, 0D8H
+ADD A, #0EBH
+MOV @R1, 0D0H
+
+XRL 7AH, A
+            SUBB A, 0A8H
+MOV R4, #32H
+   MOV 0B0H, R2
+CJNE A, #0FBH, 27H
+
+MOV @R0, #93H
+      ANL 0FH, #77H
