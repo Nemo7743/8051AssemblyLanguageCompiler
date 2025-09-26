@@ -27,12 +27,12 @@ python compiler.py
 The resulting machine code (in sequential hexadecimal bytes) will be written to test02-out.txt.
 
 Example Input (test02.txt)
-MOV R0, #25H
-ADD A, #0AH
-DJNZ 30H, 01H
+  MOV R0, #25H
+  ADD A, #0AH
+  DJNZ 30H, 01H
 
 Expected Output (test02-out.txt)
-78 25 24 0A D5 30 01
+  78 25 24 0A D5 30 01
 
 # Key Takeaway for Performance
 Working on this compiler demonstrated the direct relationship between assembly code structure and the resulting memory footprint. This experience informs my approach to writing performance-aware C++ code by considering:
